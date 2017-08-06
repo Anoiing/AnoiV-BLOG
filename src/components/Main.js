@@ -1,17 +1,15 @@
 require('normalize.css/normalize.css');
-require('styles/App.css');
+require('styles/App.scss');
+import 'semantic-ui-css/semantic.min.css';
+import React from 'react'
 
-import React from 'react';
-
-let yeomanImage = require('../images/yeoman.png');
+// 引入项目本地图片写法
+// let yeomanImage = require('../images/yeoman.png');
 
 class AppComponent extends React.Component {
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-      </div>
+      <div>{this.props.children}</div>
     );
   }
 }

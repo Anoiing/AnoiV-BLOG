@@ -19,17 +19,48 @@
   },
   "rules": {
     "comma-dangle": 1,
-    "quotes": [ 1, "single" ],
+    "quotes": [
+      1,
+      "single"
+    ],
     "no-undef": 1,
     "global-strict": 0,
     "no-extra-semi": 1,
     "no-underscore-dangle": 0,
     "no-console": 1,
     "no-unused-vars": 1,
-    "no-trailing-spaces": [1, { "skipBlankLines": true }],
+    "no-trailing-spaces": [
+      1,
+      {
+        "skipBlankLines": true
+      }
+    ],
     "no-unreachable": 1,
     "no-alert": 0,
     "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 1
+    "react/jsx-uses-vars": 1,
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "react/self-closing-comp": "off",
+    "react/no-string-refs": "off",
+    "react/prefer-stateless-function": "off",
+    "import/imports-first": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "react/prop-types": "off",
+    "padded-blocks": "off",
+    "import/no-duplicates": "off",
+    "no-restricted-syntax": "off",
+    "no-prototype-builtins": "off",
+    "array-callback-return": "off",
+    "react/jsx-indent": "off",
+    "react/no-children-prop": "off",
+    "no-nested-ternary": "off",
+    "guard-for-in": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
   }
 }
