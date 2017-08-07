@@ -45,12 +45,12 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
-        loader: 'url-loader?limit=8192'
+        test: /\.(woff|woff2|eot|ttf)$/,
+        loader: 'url-loader'
       },
       {
-        test: /\.(mp4|ogg|svg)$/,
-        loader: 'file-loader'
+        test: /\.(svg|png|jpg|gif)$/,
+        loader: 'file-loader?name=images/[hash:8].[name].[ext]'
       }
     ]
   };

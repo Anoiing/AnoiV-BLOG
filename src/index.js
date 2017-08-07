@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Router配置
 ReactDOM.render((
-  <Router>
+  <Router history={history}>
     <Switch>
       <Route exact path="/" component={AppIndex} />
       <Route component={NotMatch} />
