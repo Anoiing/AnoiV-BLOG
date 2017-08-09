@@ -188,13 +188,10 @@ export default class AppIndex extends React.Component {
                 <DividerTitle titles="标签" leftWidth="3" titlesWidth="3" lineColor="#000" lineStyle="tripleThin" />
                 <Container>
                   <Label.Group color='blue'>
-                    <Label as='a'>Fun</Label>
-                    <Label as='a'>Happy
-                      <Label.Detail>22</Label.Detail>
-                    </Label>
-                    <Label as='a'>Smart</Label>
-                    <Label as='a'>Insane</Label>
-                    <Label as='a'>Exciting</Label>
+                    <Label>前端</Label>
+                    <Label>资源</Label>
+                    <Label>React</Label>
+                    <Label>Webpack</Label>
                   </Label.Group>
                 </Container>
                 <DividerTitle titles="日期时间" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
@@ -207,8 +204,6 @@ export default class AppIndex extends React.Component {
                   <Header.Content className="timeFont">{moment(this.state.time).format('HH : mm : ss    A')}</Header.Content>
                 </Header>
                 <img src="./images/earthTime.jpg" alt="" width="100%" />
-                <DividerTitle titles="TWEET" leftWidth="3" titlesWidth="4" lineColor="#000" lineStyle="tripleThin" />
-
               </Segment>
             </Grid.Column>
           </Grid>
