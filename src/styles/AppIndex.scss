@@ -1,14 +1,33 @@
 @charset 'UTF-8';
 
-// Pubic
-.mar_top{
-  margin-top: 20px !important;
+// 自定义semantic样式
+.ui.header>.icon+.content {
+  vertical-align: bottom !important;
 }
+
+// Pubic
+.marTop {
+  margin-top: 1rem !important;
+}
+.marTop0 {
+  margin-top: 0 !important;
+}
+.marTop- {
+  margin-top: -1rem !important;
+}
+
+.cl_lr_padd {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
 
 // Menu
 .menu_container {
-  padding: 0.5em !important;
   margin-top: 20px !important;
+  padding: 0.5em !important;
+
   .menu_logo {
     font-size: 20px;
   }
@@ -17,19 +36,123 @@
 // Focus Banner
 .focusbanner {
   .control-arrow {
-    top: calc(50% - 25px) !important;
     bottom: auto !important;
     padding: 10px !important;
+    top: calc(50% - 25px) !important;
   }
 }
 
-//banner
-.banner_pic{
-  padding-top: 20px;
+// banner
+.banner_pic {
   margin-bottom: -20px;
   overflow: visible;
-  img{
+  padding-top: 20px;
+
+  img {
     width: 100%;
   }
 }
 
+// DividerTitle
+.divi_container {
+  margin: 20px auto;
+  text-align: center;
+
+  .sigleCrude {
+    height: 6px;
+  }
+
+  .tripleThin {
+    padding-top: 4px;
+    hr {
+      margin: 1px !important;
+    }
+  }
+}
+
+// Search
+
+.searchInput {
+  div,
+  input {
+    width: 100% !important;
+  }
+}
+
+//videoTab
+.videoPlayer {
+
+  i::before {
+    font-size: 2rem !important;
+  }
+}
+
+.videoTab {
+
+  .tab {
+    border: 0 !important;
+  }
+}
+
+.videoItem:not(:last-child) {
+  margin-bottom: 0!important;
+}
+
+.videoItem>.eight:not(:last-child) {
+  padding: 0 10px 0 0 !important;
+
+}
+
+.videoItem .ui.header>.icon+.content {
+  padding-left: 2px !important;
+}
+
+.videoItemCont {
+  margin-right: -10px !important;
+}
+
+.videoItemText {
+  padding: 0 10px !important;
+
+  h5 {
+    margin-bottom: 0 !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+  }
+
+  h6:not(:last-child) {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+  }
+
+  .star {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+// Gallary
+
+.galContain {
+  div {
+    display: inline-flex;
+    margin: 0;
+    padding: 4px;
+    width: calc(100% / 3);
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// timeFont
+
+.timeFont {
+  font-size: 18px !important;
+}
