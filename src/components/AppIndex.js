@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 import { Container, Segment, Grid, Embed, Header, Icon, Search, Label, Tab } from 'semantic-ui-react';
 import MenuBar from './MenuBar/MenuBar';
 import FocusPic from './FocusPic/FocusPic';
@@ -197,13 +198,32 @@ export default class AppIndex extends React.Component {
                 <DividerTitle titles="日期时间" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
                 <Header as='h4'>
                   <Icon name='calendar' />
-                  <Header.Content className="timeFont">{moment().format('YYYY年 MM月 DD日 ddd')}</Header.Content>
+                  <Header.Content className="timeFont">{moment(this.state.time).format('YYYY年 MM月 DD日 ddd')}</Header.Content>
                 </Header>
                 <Header as='h4'>
                   <Icon name='clock' />
                   <Header.Content className="timeFont">{moment(this.state.time).format('HH : mm : ss    A')}</Header.Content>
                 </Header>
                 <img src="./images/earthTime.jpg" alt="" width="100%" />
+                <DividerTitle titles="友情链接" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
+                <Container className="links">
+                  <Header as='h5' link as={Link} to="https://github.com/" target="_blank">
+                    <Icon name='github' />
+                    <Header.Content>github<Header.Subheader>https://github.com/</Header.Subheader></Header.Content>
+                  </Header>
+                  <Header as='h5' link as={Link} to="https://bitbucket.org/" target="_blank">
+                    <Icon name='bitbucket' />
+                    <Header.Content>bitbucket<Header.Subheader>https://bitbucket.org/</Header.Subheader></Header.Content>
+                  </Header>
+                  <Header as='h5' link as={Link} to="https://stackoverflow.com/" target="_blank">
+                    <Icon name='stack overflow' />
+                    <Header.Content>stack overflow<Header.Subheader>https://stackoverflow.com/</Header.Subheader></Header.Content>
+                  </Header>
+                  <Header as='h5' link as={Link} to="https://500px.com/home" target="_blank">
+                    <Icon name='500px' />
+                    <Header.Content>500px<Header.Subheader>https://500px.com/home</Header.Subheader></Header.Content>
+                  </Header>
+                </Container>
               </Segment>
             </Grid.Column>
           </Grid>

@@ -9,9 +9,11 @@
 .marTop {
   margin-top: 1rem !important;
 }
+
 .marTop0 {
   margin-top: 0 !important;
 }
+
 .marTop- {
   margin-top: -1rem !important;
 }
@@ -20,8 +22,6 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
-
 
 // Menu
 .menu_container {
@@ -152,7 +152,19 @@
 }
 
 // timeFont
-
 .timeFont {
   font-size: 18px !important;
+}
+
+// Links
+.links{
+  a {
+    display: block;
+    height: 40px;
+    margin: 5px 0;
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
 }
