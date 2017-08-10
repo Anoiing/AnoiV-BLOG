@@ -11,15 +11,13 @@ export default class AppIndex extends React.Component {
   constructor(props) {
     super(props);
     moment.locale('zh-CN');
-    this.state = {
-      time: moment()
-    };
   }
 
   componentDidMount() {
     window.setInterval(() => {
-      this.setState({ time: moment() });
-    }, 1000);
+      document.getElementById('queryDate').innerHTML = moment().format('YYYY年 MM月 DD日 ddd');
+      document.getElementById('queryTime').innerHTML = moment().format('HH : mm : ss A');
+    },1000);
   }
 
   componentWillUnmount() {
@@ -64,7 +62,6 @@ export default class AppIndex extends React.Component {
           </Tab.Pane>
       }
     ];
-
     return (
       <div>
         <MenuBar />
@@ -198,28 +195,28 @@ export default class AppIndex extends React.Component {
                 <DividerTitle titles="日期时间" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
                 <Header as='h4'>
                   <Icon name='calendar' />
-                  <Header.Content className="timeFont">{moment(this.state.time).format('YYYY年 MM月 DD日 ddd')}</Header.Content>
+                  <Header.Content className="timeFont" id="queryDate"></Header.Content>
                 </Header>
                 <Header as='h4'>
                   <Icon name='clock' />
-                  <Header.Content className="timeFont">{moment(this.state.time).format('HH : mm : ss    A')}</Header.Content>
+                  <Header.Content className="timeFont" id="queryTime"></Header.Content>
                 </Header>
                 <img src="./images/earthTime.jpg" alt="" width="100%" />
                 <DividerTitle titles="友情链接" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
                 <Container className="links">
-                  <Header as='h5' link as={Link} to="https://github.com/" target="_blank">
+                  <Header as='h5' as={Link} to="https://github.com/" target="_blank">
                     <Icon name='github' />
                     <Header.Content>github<Header.Subheader>https://github.com/</Header.Subheader></Header.Content>
                   </Header>
-                  <Header as='h5' link as={Link} to="https://bitbucket.org/" target="_blank">
+                  <Header as='h5' as={Link} to="https://bitbucket.org/" target="_blank">
                     <Icon name='bitbucket' />
                     <Header.Content>bitbucket<Header.Subheader>https://bitbucket.org/</Header.Subheader></Header.Content>
                   </Header>
-                  <Header as='h5' link as={Link} to="https://stackoverflow.com/" target="_blank">
+                  <Header as='h5' as={Link} to="https://stackoverflow.com/" target="_blank">
                     <Icon name='stack overflow' />
                     <Header.Content>stack overflow<Header.Subheader>https://stackoverflow.com/</Header.Subheader></Header.Content>
                   </Header>
-                  <Header as='h5' link as={Link} to="https://500px.com/home" target="_blank">
+                  <Header as='h5' as={Link} to="https://500px.com/home" target="_blank">
                     <Icon name='500px' />
                     <Header.Content>500px<Header.Subheader>https://500px.com/home</Header.Subheader></Header.Content>
                   </Header>
