@@ -6,6 +6,7 @@ import MenuBar from './MenuBar/MenuBar';
 import FocusPic from './FocusPic/FocusPic';
 import DividerTitle from './DividerTitle/DividerTitle';
 import VideoListItem from './VideoListItem/VideoListItem';
+import Footer from './Footer/Footer';
 
 export default class AppIndex extends React.Component {
   constructor(props) {
@@ -188,6 +189,8 @@ export default class AppIndex extends React.Component {
                   <Label.Group color='blue'>
                     <Label>前端</Label>
                     <Label>资源</Label>
+                    <Label>ES6</Label>
+                    <Label>JavaScript</Label>
                     <Label>React</Label>
                     <Label>Webpack</Label>
                   </Label.Group>
@@ -224,8 +227,8 @@ export default class AppIndex extends React.Component {
               </Segment>
             </Grid.Column>
           </Grid>
-
         </Container>
+        <Footer />
       </div>
     );
   }
