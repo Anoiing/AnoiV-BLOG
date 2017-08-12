@@ -1,23 +1,30 @@
-@charset 'UTF-8';
-.ntm-bg{
+@charset "UTF-8";
+
+.ntm-bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url('../images/ntm_bg.jpg') no-repeat 0px 0px;
+  background: url("http://oukbnub30.bkt.clouddn.com/ntm_bg.jpg") no-repeat 0px 0px;
   background-size: cover;
-  .ntm-404{
+
+  .ntm-404 {
     margin: 80px auto 40px;
     color: #fff;
-    h1{ font-size: 160px; }
+
+    h1 {
+      font-size: 80px;
+    }
   }
-  .ntm-ret{
+
+  .ntm-ret {
     width: 300px;
     height: 18em;
     margin: 0 auto;
   }
-  .ntm-span{
+
+  .ntm-span {
     font-size: 18px;
     color: #fff;
   }

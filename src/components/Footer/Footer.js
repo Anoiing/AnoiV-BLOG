@@ -8,14 +8,14 @@ export default class Footer extends React.Component {
       <div className="footer marTop">
         <Container>
           <Grid>
-            <Grid.Column computer={8} mobile={2}>
+            <Grid.Column computer={8} mobile={16}>
               <Header as='h2'>
                 <Header.Content className="footText marTop">Anoi灬V少's BLOG</Header.Content>
               </Header>
               <Container>Never missed any post published in our site. Subscribe to our daly newsletter now.</Container>
             
             </Grid.Column>
-            <Grid.Column computer={8} mobile={2}>
+            <Grid.Column computer={8} mobile={16}>
               <Header as='h3'>
                 <Header.Content className="footText marTop">TAGS</Header.Content>
               </Header>
