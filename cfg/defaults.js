@@ -46,15 +46,11 @@ function getDefaultModules() {
       },
       {
         test: /\.(woff|woff2|eot|ttf)$/,
-        loader: 'url-loader?limit=8192'
+        loader: 'file-loader?name=fonts/[name].[ext]'
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
-        loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
-      },
-      {
-        test: /\.(svg|png|jpg|gif)$/,
-        loader: 'file-loader?name=images/[hash:8].[name].[ext]'
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader?name=images/[name].[ext]'
       }
     ]
   };
