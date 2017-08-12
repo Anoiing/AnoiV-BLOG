@@ -7,6 +7,9 @@ import FocusPic from './FocusPic/FocusPic';
 import DividerTitle from './DividerTitle/DividerTitle';
 import VideoListItem from './VideoListItem/VideoListItem';
 import Footer from './Footer/Footer';
+import fetchJsonp from 'fetch-jsonp';
+
+
 
 export default class AppIndex extends React.Component {
   constructor(props) {
@@ -18,7 +21,38 @@ export default class AppIndex extends React.Component {
     window.setInterval(() => {
       document.getElementById('queryDate').innerHTML = moment().format('YYYY年 MM月 DD日 ddd');
       document.getElementById('queryTime').innerHTML = moment().format('HH : mm : ss A');
-    },1000);
+    }, 1000);
+    const ur = 'https://way.jd.com/jisuapi/get?channel=科技&num=10&start=0&appkey=e79b40586ad62aa7416ff9c5f96b6190';
+    const ar = 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=衢州&bk_length=600';
+    const cr = 'http://api.1-blog.com/biz/bizserver/news/list.do';
+    
+    // fetchJsonp(ar, {
+    //   mode: 'cors',
+    //   headers: { 'content-type': 'application/json' },
+    //   method: 'GET',
+    //   jsonpCallback: 'result',
+    //   jsonpCallbackFunction: 'results'
+    // }).then(
+    //   (response) => console.log(respose)
+    // ).then(data => console.log(data))
+
+
+    // fetch(ur).then(
+    //   (response) => console.log(respose)
+    // ).then(data => console.log(data))
+
+    // var xhr = new XMLHttpRequest();
+    // xhr.onload = function () {
+    //   alert(xhr.responseText);
+    // };
+    // xhr.open('GET', ur, true);
+    // xhr.setRequestHeader('Content-Type', 'text/html');
+    // xhr.send('f=json');
+
+    fetch(ur).then(response => console.log(response))
+      .then(data => console.log(data))
+      .catch(e => console.log('Oops, error', e))
+
   }
 
   componentWillUnmount() {

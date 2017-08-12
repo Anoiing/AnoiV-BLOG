@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
                 <Header.Content className="footText marTop">TAGS</Header.Content>
               </Header>
               <Container>
-                <Label.Group color='white'>
+                <Label.Group color='blue'>
                   <Label basic>前端</Label>
                   <Label basic>ES6</Label>
                   <Label basic>JavaScript</Label>

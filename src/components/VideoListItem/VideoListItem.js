@@ -9,6 +9,19 @@ export default class VideoListItem extends React.Component {
 
     // console.log(window.frames['myFrame'].contents);
   }
+  
+  getValue() {
+    let ofrm1 = document.getElementById('frame1').document;
+    if (ofrm1 == undefined) {
+      ofrm1 = document.getElementById('frame1').contentWindow.document;
+      let ff = ofrm1.getElementById('link3');
+      alert('firefox/chrome取值结果为:' + ff);
+    }
+    else {
+      let ie = document.frames['frame1'].document.getElementById('link3').value;
+      alert('ie取值结果为:' + ie);
+    }
+  }
 
   render() {
     const embVideo = this.props.embVideo ? this.props.embVideo :
@@ -26,7 +39,7 @@ export default class VideoListItem extends React.Component {
             icon="video play"
             className="videoPlayer"
           />
-          {/* <iframe ref='my' id='myFrame' name='myFrame' src='https://v.youku.com/v_show/id_XMjkzNTU5ODA5Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!13~A#paction' frameborder="0" height="0" width="0"></iframe> */}
+          <iframe ref='my' id='frame1' name='myFrame' frameborder="1" src='http://player.youku.com/embed/XMjk0NTM2NDczNg==' frameborder="0" height="0" width="0"></iframe>
           {/* <embed src='http://player.youku.com/player.php/sid/XMjg4NjQ5NzY5Ng==/v.swf' allowFullScreen='true' quality='high' width='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed> */}
         </Grid.Column>
         <Grid.Column computer={8} mobile={16} className="videoItemText">
