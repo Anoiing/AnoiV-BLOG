@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('http://oukbnub30.bkt.clouddn.com/iconfont/icomoon.eot?5yteol');
-  src:  url('http://oukbnub30.bkt.clouddn.com/iconfont/icomoon.eot?5yteol#iefix') format('embedded-opentype'),
-    url('http://oukbnub30.bkt.clouddn.com/iconfont/icomoon.ttf?5yteol') format('truetype'),
-    url('http://oukbnub30.bkt.clouddn.com/iconfont/icomoon.woff?5yteol') format('woff'),
-    url('http://oukbnub30.bkt.clouddn.com/iconfont/icomoon.svg?5yteol#icomoon') format('svg');
+  src:  url('http://oukbnub30.bkt.clouddn.com/icons/icomoon.eot?hbd6mu');
+  src:  url('http://oukbnub30.bkt.clouddn.com/icons/icomoon.eot?hbd6mu#iefix') format('embedded-opentype'),
+    url('http://oukbnub30.bkt.clouddn.com/icons/icomoon.ttf?hbd6mu') format('truetype'),
+    url('http://oukbnub30.bkt.clouddn.com/icons/icomoon.woff?hbd6mu') format('woff'),
+    url('http://oukbnub30.bkt.clouddn.com/icons/icomoon.svg?hbd6mu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -389,6 +389,18 @@
 }
 .icon-bin:before {
   content: "\e9ac";
+}
+.icon-menu:before {
+  content: "\e9df";
+}
+.icon-menu2:before {
+  content: "\e9e0";
+}
+.icon-menu3:before {
+  content: "\e9e1";
+}
+.icon-menu4:before {
+  content: "\e9e2";
 }
 .icon-download2:before {
   content: "\e9c5";

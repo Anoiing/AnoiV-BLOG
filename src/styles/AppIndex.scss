@@ -44,8 +44,6 @@
 
 // banner
 .banner_pic {
-  margin-bottom: -20px;
-  overflow: visible;
   padding-top: 20px;
 
   img {
@@ -91,10 +89,23 @@
   .tab {
     border: 0 !important;
   }
+  .item {
+    width: calc(100% / 3) !important;
+    text-align: center !important;
+    display: inline-block !important;
+  }
 }
 
 .videoItem:not(:last-child) {
   margin-bottom: 0 !important;
+}
+
+.videoItem:last-child {
+  margin-bottom: 1rem !important;
+}
+
+.videoItem {
+  margin-left: 0 !important;
 }
 
 .videoItem > .eight:not(:last-child) {
@@ -130,6 +141,27 @@
   .star {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 320px) {
+    h5 {
+      margin: 12px 0 5px 0 !important;
+      white-space: nowrap !important;
+      text-overflow: ellipsis !important;
+      overflow: hidden !important;
+    }
+
+    h6:not(:last-child) {
+      margin: 10px 0 !important;
+      white-space: nowrap !important;
+      text-overflow: ellipsis !important;
+      overflow: hidden !important;
+    }
+
+    .star {
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+    }
   }
 }
 

@@ -12,7 +12,7 @@ export default class Divider extends React.Component {
     return (
       <div className="divi_container">
         <Grid>
-          <Grid.Column computer={leftWidth} mobile={2}>
+          <Grid.Column computer={leftWidth} mobile={leftWidth}>
             {lineStyle === 'sigleCrude' ?
               <hr color={lineColor} className="sigleCrude"/> :
               <div className="tripleThin">
@@ -22,10 +22,10 @@ export default class Divider extends React.Component {
               </div>
              }
           </Grid.Column>
-          <Grid.Column computer={titlesWidth} mobile={2} className="cl_lr_padd">
+          <Grid.Column computer={titlesWidth} mobile={titlesWidth} className="cl_lr_padd">
             <Header as='h3'>{titles}</Header>
           </Grid.Column>
-          <Grid.Column computer={16 - leftWidth - titlesWidth} mobile={2}>
+          <Grid.Column computer={16 - leftWidth - titlesWidth} mobile={16 - leftWidth - titlesWidth}>
             {lineStyle === 'sigleCrude' ?
               <hr color={lineColor} className="sigleCrude" /> :
               <div className="tripleThin">

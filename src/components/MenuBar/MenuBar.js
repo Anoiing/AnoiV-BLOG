@@ -6,7 +6,17 @@ import NotificationSystem from 'react-notification-system';
 
 export default class MenuBar extends React.Component {
 
-  state = { activeItem: 'home' }
+  state = { activeItem: 'home', isMobile: false }
+
+  componentDidMount() {
+    window.onresize = () => {
+      if (document.body.clientWidth <= 767 && !this.state.isMobile) {
+        this.setState({ isMobile: true });
+      } else if (this.state.isMobile) {
+        this.setState({ isMobile: false });
+      }
+    }
+  }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
@@ -24,11 +34,15 @@ export default class MenuBar extends React.Component {
     return (
       <Container>
         <Segment inverted className="menu_container">
-          <Menu inverted secondary icon >
-            <Menu.Item><span className="menu_logo">Anoi灬V少BLOG</span></Menu.Item>
+          <Menu inverted secondary icon stackable>
+            <Menu.Item><span className="menu_logo">Anoi灬V少BLOG</span>
+              {this.state.isMobile && <Button icon floated="right" secondary>
+                <Icon name='icon-menu' />
+              </Button>}
+            </Menu.Item>
             <Menu.Item name='home' active={this.state.activeItem === 'home'}
               onClick={this.handleItemClick} link as={Link} to="/">
-              <Icon className='home' />首  页
+              <Icon className='icon-home' />&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;&nbsp;&nbsp;&nbsp;页
             </Menu.Item>
             <Menu.Item name='messages' active={this.state.activeItem === 'messages'}
               onClick={this.handleItemClick} link as={Link} to="/message" />
@@ -40,7 +54,7 @@ export default class MenuBar extends React.Component {
                   <Header as='h4'>给我发邮件</Header>
                   <CopyToClipboard text="A534645655@outlook.com"
                     onCopy={() => this.addNoti()}>
-                    <Button><Icon className='clone' />点我获取邮箱地址</Button>
+                    <Button><Icon className='icon-copy' />点我获取邮箱地址</Button>
                   </CopyToClipboard>
                 </Popup>
               </Menu.Item>

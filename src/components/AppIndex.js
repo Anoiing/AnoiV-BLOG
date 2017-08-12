@@ -57,7 +57,7 @@ export default class AppIndex extends React.Component {
     const picArr2 = ['1-1.jpg', '2-2.jpg', '3-3.jpg'];
     const panes = [
       {
-        menuItem: { key: 'hot', icon: 'icon-fire', content: '热门播放' }, render: () =>
+        menuItem: { key: 'hot', icon: 'icon-fire', content: '热门' }, render: () =>
           <Tab.Pane attached>
             <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
             <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
@@ -73,7 +73,7 @@ export default class AppIndex extends React.Component {
           </Tab.Pane>
       },
       {
-        menuItem: { key: 'guess', icon: 'icon-gift2', content: '猜你想看' }, render: () =>
+        menuItem: { key: 'guess', icon: 'icon-gift2', content: '推荐' }, render: () =>
           <Tab.Pane attached>
             <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
             <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
@@ -112,13 +112,13 @@ export default class AppIndex extends React.Component {
                 />
                 <Header as='h2' content="Video's Name" subheader='By Kelvin' />
                 <Grid>
-                  <Grid.Column computer={3} mobile={2}>
+                  <Grid.Column computer={3} mobile={5}>
                     <Header as='h6'>
                       <Icon className='icon-calendar2' size="mini" />
                       <Header.Content>25/3/2015</Header.Content>
                     </Header>
                   </Grid.Column>
-                  <Grid.Column computer={3} mobile={2}>
+                  <Grid.Column computer={3} mobile={5}>
                     <Header as='h6'>
                       <Icon className='icon-heart' size="mini" />
                       <Header.Content>1,200</Header.Content>
@@ -130,7 +130,7 @@ export default class AppIndex extends React.Component {
                 </Container>
                 <DividerTitle titles="Vimeo" leftWidth="2" titlesWidth="2" lineColor="#17B1E5" lineStyle="sigleCrude" />
                 <Grid>
-                  <Grid.Column computer={8} mobile={8}>
+                  <Grid.Column computer={8} mobile={16}>
                     <Embed
                       id='125292332'
                       placeholder='http://oukbnub30.bkt.clouddn.com/vimeo_placehoder.jpg'
@@ -140,13 +140,13 @@ export default class AppIndex extends React.Component {
                     />
                     <Header as='h2' content="Video's Name" subheader='By Kelvin' />
                     <Grid>
-                      <Grid.Column computer={6} mobile={2}>
+                      <Grid.Column computer={6} mobile={5}>
                         <Header as='h6'>
                           <Icon className='icon-calendar2' size="mini" />
                           <Header.Content>25/3/2015</Header.Content>
                         </Header>
                       </Grid.Column>
-                      <Grid.Column computer={6} mobile={2}>
+                      <Grid.Column computer={6} mobile={5}>
                         <Header as='h6'>
                           <Icon className='icon-heart' size="mini" />
                           <Header.Content>1,200</Header.Content>
@@ -157,7 +157,7 @@ export default class AppIndex extends React.Component {
                       Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.
                     </Container>
                   </Grid.Column>
-                  <Grid.Column computer={8} mobile={8}>
+                  <Grid.Column computer={8} mobile={16}>
                     <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
                     <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347', stars: 4 }} showTime={false} showWatched={false} showStars={true} />
                     <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
