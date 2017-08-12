@@ -31,6 +31,17 @@
   .menu_logo {
     font-size: 20px;
   }
+  
+  .mobileMenu{
+    position: absolute !important;
+    right: 1rem;
+    top: 2px !important;
+  }
+
+  .hidden.transition {
+    display: none!important;
+    visibility: hidden;
+  }
 }
 
 // Focus Banner
