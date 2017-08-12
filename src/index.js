@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 ReactDOM.render((
   <Router history={history}>
     <Switch>
-      <Route exact path="/" component={AppIndex} />
+      <Route exact path="/AnoiV-BLOG/" component={AppIndex} />
       <Route component={NotMatch} />
     </Switch>
   </Router>

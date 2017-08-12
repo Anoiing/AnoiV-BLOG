@@ -13,7 +13,7 @@ export default class NotMatch extends React.Component {
             <h3 className="cssc60362a3a19e8e" >ooops, something goes wrong！</h3>
           </div>
           <div className="ntm-ret">
-            <Link to="/"><Button color='linkedin' fluid>
+            <Link to="/AnoiV-BLOG/"><Button color='linkedin' fluid>
               <Icon name='home' /> 返回首页
             </Button></Link>
           </div>
