@@ -37,22 +37,6 @@ export default class AppIndex extends React.Component {
     // ).then(data => console.log(data))
 
 
-    // fetch(ur).then(
-    //   (response) => console.log(respose)
-    // ).then(data => console.log(data))
-
-    // var xhr = new XMLHttpRequest();
-    // xhr.onload = function () {
-    //   alert(xhr.responseText);
-    // };
-    // xhr.open('GET', ur, true);
-    // xhr.setRequestHeader('Content-Type', 'text/html');
-    // xhr.send('f=json');
-
-    // fetch(ur).then(response => console.log(response))
-    //   .then(data => console.log(data))
-    //   .catch(e => console.log('Oops, error', e))
-
   }
 
   componentWillUnmount() {
