@@ -49,9 +49,9 @@ export default class AppIndex extends React.Component {
     // xhr.setRequestHeader('Content-Type', 'text/html');
     // xhr.send('f=json');
 
-    fetch(ur).then(response => console.log(response))
-      .then(data => console.log(data))
-      .catch(e => console.log('Oops, error', e))
+    // fetch(ur).then(response => console.log(response))
+    //   .then(data => console.log(data))
+    //   .catch(e => console.log('Oops, error', e))
 
   }
 
@@ -75,25 +75,25 @@ export default class AppIndex extends React.Component {
       {
         menuItem: { key: 'hot', icon: 'fire', content: '热门播放' }, render: () =>
           <Tab.Pane attached>
-            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: './images/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
-            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: './images/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
-            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: './images/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
+            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
+            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
+            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
           </Tab.Pane>
       },
       {
         menuItem: { key: 'popular', icon: 'thumbs up', content: '流行' }, render: () =>
           <Tab.Pane attached>
-            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: './images/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
-            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: './images/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
-            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: './images/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
+            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
+            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
+            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
           </Tab.Pane>
       },
       {
         menuItem: { key: 'guess', icon: 'gift', content: '猜你想看' }, render: () =>
           <Tab.Pane attached>
-            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: './images/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
-            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: './images/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
-            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: './images/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
+            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
+            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
+            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
           </Tab.Pane>
       }
     ];
@@ -109,7 +109,7 @@ export default class AppIndex extends React.Component {
               <Grid.Column computer={6} mobile={16}>
                 <FocusPic att={att2} picArr={picArr2} />
                 <div className="banner_pic">
-                  <img src="./images/banner.jpg" alt="" />
+                  <img src="http://oukbnub30.bkt.clouddn.com/banner.jpg" alt="" />
                 </div>
               </Grid.Column>
             </Grid>
@@ -122,7 +122,7 @@ export default class AppIndex extends React.Component {
               <Segment className="marTop">
                 <Embed
                   id='125292332'
-                  placeholder='./images/vimeo_placehoder.jpg'
+                  placeholder='http://oukbnub30.bkt.clouddn.com/vimeo_placehoder.jpg'
                   source='vimeo'
                 />
                 <Header as='h2' content="Video's Name" subheader='By Kelvin' />
@@ -148,7 +148,7 @@ export default class AppIndex extends React.Component {
                   <Grid.Column computer={8} mobile={8}>
                     <Embed
                       id='125292332'
-                      placeholder='./images/vimeo_placehoder.jpg'
+                      placeholder='http://oukbnub30.bkt.clouddn.com/vimeo_placehoder.jpg'
                       source='vimeo'
                       className="marTop-"
                     />
@@ -172,11 +172,11 @@ export default class AppIndex extends React.Component {
                     </Container>
                   </Grid.Column>
                   <Grid.Column computer={8} mobile={8}>
-                    <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: './images/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
-                    <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: './images/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347', stars: 4 }} showTime={false} showWatched={false} showStars={true} />
-                    <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: './images/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
-                    <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: './images/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561', stars: 4 }} showTime={false} showWatched={false} showStars={true} />
-                    <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: './images/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
+                    <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
+                    <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347', stars: 4 }} showTime={false} showWatched={false} showStars={true} />
+                    <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
+                    <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561', stars: 4 }} showTime={false} showWatched={false} showStars={true} />
+                    <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347', stars: 3 }} showTime={false} showWatched={false} showStars={true} />
                   </Grid.Column>
                 </Grid>
 
@@ -193,15 +193,15 @@ export default class AppIndex extends React.Component {
                 <Tab menu={{ secondary: true, pointing: true }} panes={panes} className="videoTab" />
                 <DividerTitle titles="画廊" leftWidth="3" titlesWidth="2" lineColor="#000" lineStyle="tripleThin" />
                 <Container className="galContain">
-                  <div><img src="./images/gal-1.jpg" alt="gal-1" /></div>
-                  <div><img src="./images/gal-2.jpg" alt="gal-2" /></div>
-                  <div><img src="./images/gal-3.jpg" alt="gal-3" /></div>
-                  <div><img src="./images/gal-4.jpg" alt="gal-4" /></div>
-                  <div><img src="./images/gal-5.jpg" alt="gal-5" /></div>
-                  <div><img src="./images/gal-6.jpg" alt="gal-6" /></div>
-                  <div><img src="./images/gal-7.jpg" alt="gal-7" /></div>
-                  <div><img src="./images/gal-8.jpg" alt="gal-8" /></div>
-                  <div><img src="./images/gal-1.jpg" alt="gal-1" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-1.jpg" alt="gal-1" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-2.jpg" alt="gal-2" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-3.jpg" alt="gal-3" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-4.jpg" alt="gal-4" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-5.jpg" alt="gal-5" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-6.jpg" alt="gal-6" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-7.jpg" alt="gal-7" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-8.jpg" alt="gal-8" /></div>
+                  <div><img src="http://oukbnub30.bkt.clouddn.com/gal-1.jpg" alt="gal-1" /></div>
                 </Container>
 
 
@@ -238,7 +238,7 @@ export default class AppIndex extends React.Component {
                   <Icon name='clock' />
                   <Header.Content className="timeFont" id="queryTime"></Header.Content>
                 </Header>
-                <img src="./images/earthTime.jpg" alt="" width="100%" />
+                <img src="http://oukbnub30.bkt.clouddn.com/earthTime.jpg" alt="" width="100%" />
                 <DividerTitle titles="友情链接" leftWidth="3" titlesWidth="5" lineColor="#000" lineStyle="tripleThin" />
                 <Container className="links">
                   <Header as='h5' as={Link} to="https://github.com/" target="_blank">

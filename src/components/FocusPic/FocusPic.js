@@ -31,7 +31,7 @@ export default class FocusPic extends React.Component {
       >
         {picArr.map((item, i) =>
           <div key={i}>
-            <img src={`./images/${item}`} />
+            <img src={`http://oukbnub30.bkt.clouddn.com/${item}`} />
           </div>
         )}
       </Carousel>
