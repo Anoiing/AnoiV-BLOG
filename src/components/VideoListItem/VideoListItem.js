@@ -17,18 +17,18 @@ export default class VideoListItem extends React.Component {
             id={embVideo.id}
             placeholder={embVideo.placeholder}
             source={embVideo.source}
-            icon="video play"
+            icon="icon-media-play-outline"
             className="videoPlayer"
           />
         </Grid.Column>
         <Grid.Column computer={8} mobile={16} className="videoItemText">
           <Header as='h5' content={embVideo.name} subheader={`By ${embVideo.author}`} />
           {showTime && <Header as='h6'>
-            <Icon name='calendar' size="mini" />
+            <Icon className='icon-calendar2' size="mini" />
             <Header.Content>{moment(embVideo.time).format('DD/MM/YYYY')}</Header.Content>
           </Header>}
           {showWatched && <Header as='h6'>
-            <Icon name='play circle outline' size="mini" />
+            <Icon className='icon-play2' size="mini" />
             <Header.Content>{embVideo.watched} 次播放</Header.Content>
           </Header>}
           {showStars && <Rating icon='star' defaultRating={embVideo.stars} maxRating={5} size='mini' disabled />}

@@ -1,11 +1,11 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 // 初始化样式
-@import './core/Base.scss';
+@import "./core/Base.scss";
 
 // icomoon
-@import './core/icomoon.scss';
+@import "./core/icomoon.scss";
 
 // component 样式
-@import './AppIndex.scss';
-@import './NotMatch.scss';
+@import "./AppIndex.scss";
+@import "./NotMatch.scss";

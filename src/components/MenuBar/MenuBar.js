@@ -28,7 +28,7 @@ export default class MenuBar extends React.Component {
             <Menu.Item><span className="menu_logo">Anoi灬V少BLOG</span></Menu.Item>
             <Menu.Item name='home' active={this.state.activeItem === 'home'}
               onClick={this.handleItemClick} link as={Link} to="/">
-              <Icon name='home' />首  页
+              <Icon className='home' />首  页
             </Menu.Item>
             <Menu.Item name='messages' active={this.state.activeItem === 'messages'}
               onClick={this.handleItemClick} link as={Link} to="/message" />
@@ -36,15 +36,15 @@ export default class MenuBar extends React.Component {
               onClick={this.handleItemClick} link as={Link} to="/friends" />
             <Menu.Menu position='right'>
               <Menu.Item name='mail'>
-                <Popup trigger={<Button><Icon name='mail' />E-Mail</Button>} flowing hoverable>
+                <Popup trigger={<Button><Icon className='icon-envelop' />E-Mail</Button>} flowing hoverable>
                   <Header as='h4'>给我发邮件</Header>
                   <CopyToClipboard text="A534645655@outlook.com"
                     onCopy={() => this.addNoti()}>
-                    <Button><Icon name='clone' />点我获取邮箱地址</Button>
+                    <Button><Icon className='clone' />点我获取邮箱地址</Button>
                   </CopyToClipboard>
                 </Popup>
               </Menu.Item>
-              <Menu.Item name='help'><Button><Icon name='help circle' />Help</Button></Menu.Item>
+              <Menu.Item name='help'><Button><Icon className='icon-question' />Help</Button></Menu.Item>
             </Menu.Menu>
           </Menu>
         </Segment>

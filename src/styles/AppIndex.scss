@@ -1,7 +1,7 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 // 自定义semantic样式
-.ui.header>.icon+.content {
+.ui.header > .icon + .content {
   vertical-align: bottom !important;
 }
 
@@ -64,6 +64,7 @@
 
   .tripleThin {
     padding-top: 4px;
+
     hr {
       margin: 1px !important;
     }
@@ -81,29 +82,26 @@
 
 //videoTab
 .videoPlayer {
-
   i::before {
     font-size: 2rem !important;
   }
 }
 
 .videoTab {
-
   .tab {
     border: 0 !important;
   }
 }
 
 .videoItem:not(:last-child) {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
-.videoItem>.eight:not(:last-child) {
+.videoItem > .eight:not(:last-child) {
   padding: 0 10px 0 0 !important;
-
 }
 
-.videoItem .ui.header>.icon+.content {
+.videoItem .ui.header > .icon + .content {
   padding-left: 2px !important;
 }
 
@@ -157,7 +155,7 @@
 }
 
 // Links
-.links{
+.links {
   a {
     display: block;
     height: 40px;
@@ -168,7 +166,6 @@
     }
   }
 }
-
 
 // Footer
 .footer {

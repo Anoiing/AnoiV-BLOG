@@ -14,7 +14,7 @@ export default class NotMatch extends React.Component {
           </div>
           <div className="ntm-ret">
             <Link to="/AnoiV-BLOG/"><Button color='linkedin' fluid>
-              <Icon name='home' /> 返回首页
+              <Icon className='icon-home' /> 返回首页
             </Button></Link>
           </div>
           <span className="ntm-span">© 2017 Cool 404 Page Widget. All rights reserved</span>
