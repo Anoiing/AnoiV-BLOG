@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Button, Icon } from 'semantic-ui-react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default class NotMatch extends React.Component {
 
