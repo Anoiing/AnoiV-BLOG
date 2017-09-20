@@ -1,5 +1,3 @@
-require('styles/App.scss');
-import 'semantic-ui-css/semantic.min.css';
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
