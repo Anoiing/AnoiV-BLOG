@@ -36,4 +36,7 @@ bower_components/
 dist/
 test/
 
+# Store the display properties of the folder for Mac OS
+.DS_Store
+
 \.vscode/

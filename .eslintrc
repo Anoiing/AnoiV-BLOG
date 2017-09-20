@@ -1,0 +1,73 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "strict": 2,
+    "comma-dangle": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-undef": "error",
+    "global-strict": "off",
+    "no-extra-semi": "warn",
+    "no-underscore-dangle": "off",
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "no-trailing-spaces": "error",
+    "no-unreachable": "error",
+    "no-alert": "error",
+    "react/jsx-uses-react": "warn",
+    "react/jsx-uses-vars": "error",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "react/self-closing-comp": "off",
+    "react/no-string-refs": "off",
+    "react/prefer-stateless-function": "off",
+    "import/imports-first": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "react/prop-types": "off",
+    "padded-blocks": "off",
+    "import/no-duplicates": "off",
+    "no-restricted-syntax": "off",
+    "no-prototype-builtins": "off",
+    "array-callback-return": "off",
+    "react/jsx-indent": "off",
+    "react/no-children-prop": "off",
+    "no-nested-ternary": "off",
+    "guard-for-in": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-class-assign": "off",
+    "react/no-multi-comp": "off",
+    "global-require": "warn",
+    "import/no-dynamic-require": "warn",
+    "new-cap": "warn",
+    "camelcase": "error",
+    "no-dupe-args": "error",
+    "no-eq-null": "error",
+    "no-debugger": "warn"
+  }
+}
