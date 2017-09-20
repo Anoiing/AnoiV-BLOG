@@ -236,7 +236,7 @@ export default class AppIndex extends React.Component {
                     <Header.Content>bitbucket<Header.Subheader>https://bitbucket.org/</Header.Subheader></Header.Content>
                   </Header>
                   <Header as='h5' as={Link} to="https://stackoverflow.com/" target="_blank">
-                    <Icon className='icon-brand10' />
+                    <Icon name='stack overflow' />
                     <Header.Content>stack overflow<Header.Subheader>https://stackoverflow.com/</Header.Subheader></Header.Content>
                   </Header>
                   <Header as='h5' as={Link} to="https://500px.com/home" target="_blank">

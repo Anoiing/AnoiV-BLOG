@@ -46,11 +46,11 @@ function getDefaultModules() {
       },
       {
         test: /\.(woff|woff2|eot|ttf)$/,
-        loader: 'file-loader?name=fonts/[name].[ext]'
+        loader: 'file-loader?name=[name].[ext]'
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file-loader?name=images/[name].[ext]'
+        loader: 'file-loader?name=[name].[ext]'
       }
     ]
   };
@@ -58,7 +58,7 @@ function getDefaultModules() {
 
 module.exports = {
   srcPath: srcPath,
-  publicPath: '/assets/',
+  publicPath: '/',
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
