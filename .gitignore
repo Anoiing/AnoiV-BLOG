@@ -33,9 +33,6 @@ bower_components/
 .idea
 \.vscode/
 
-# dist Webpack
-dist/
-
 # Store the display properties of the folder for Mac OS
 .DS_Store
 \.DS_Store

@@ -22,21 +22,6 @@ export default class AppIndex extends React.Component {
       document.getElementById('queryDate').innerHTML = moment().format('YYYY年 MM月 DD日 ddd');
       document.getElementById('queryTime').innerHTML = moment().format('HH : mm : ss A');
     }, 1000);
-    const ur = 'https://way.jd.com/jisuapi/get?channel=科技&num=10&start=0&appkey=e79b40586ad62aa7416ff9c5f96b6190';
-    const ar = 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=衢州&bk_length=600';
-    const cr = 'http://api.1-blog.com/biz/bizserver/news/list.do';
-    
-    // fetchJsonp(ar, {
-    //   mode: 'cors',
-    //   headers: { 'content-type': 'application/json' },
-    //   method: 'GET',
-    //   jsonpCallback: 'result',
-    //   jsonpCallbackFunction: 'results'
-    // }).then(
-    //   (response) => console.log(respose)
-    // ).then(data => console.log(data))
-
-
   }
 
   componentWillUnmount() {
@@ -59,9 +44,9 @@ export default class AppIndex extends React.Component {
       {
         menuItem: { key: 'hot', icon: 'icon-fire', content: '热门' }, render: () =>
           <Tab.Pane attached>
-            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
-            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
-            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'http://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
+            <VideoListItem embVideo={{ id: 'J7UwSVsiwzI', placeholder: 'https://oukbnub30.bkt.clouddn.com/videoList01.jpg', source: 'youtube', name: 'Space Cats — Magic Fly', author: 'Enjoyker', time: '2015-10-07', watched: '184,561' }} />
+            <VideoListItem embVideo={{ id: 'a5JySIRcPFs', placeholder: 'https://oukbnub30.bkt.clouddn.com/videoList02.jpg', source: 'youtube', name: 'Singing Cats', author: 'Joaquim Nielsen', time: '2009-10-15', watched: '6,228,347' }} />
+            <VideoListItem embVideo={{ id: 'gJscrxxl_Bg', placeholder: 'https://oukbnub30.bkt.clouddn.com/videoList03.jpg', source: 'youtube', name: 'Shia LaBeouf - Just Do it! (Auto-tuned)', author: 'Enjoyker', time: '2015-6-10', watched: '6,228,391' }} />
           </Tab.Pane>
       },
       {
