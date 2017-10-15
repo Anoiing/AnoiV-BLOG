@@ -1,18 +1,16 @@
-'use strict';
-
-let path = require('path');
-let webpack = require('webpack');
-let baseConfig = require('./base');
-let defaultSettings = require('./defaults');
+const path = require('path');
+const webpack = require('webpack');
+const baseConfig = require('./base');
+const defaultSettings = require('./defaults');
 
 // Add needed plugins here
-let BowerWebpackPlugin = require('bower-webpack-plugin');
+const BowerWebpackPlugin = require('bower-webpack-plugin');
 
-let config = Object.assign({}, baseConfig, {
+const config = Object.assign({}, baseConfig, {
   entry: [
-    'webpack-dev-server/client?http://127.0.0.1:' + defaultSettings.port,
+    `webpack-dev-server/client?http://127.0.0.1:${defaultSettings.port}`,
     'webpack/hot/only-dev-server',
-    './src/index'
+    './src/index',
   ],
   cache: true,
   devtool: 'eval-source-map',
@@ -20,10 +18,10 @@ let config = Object.assign({}, baseConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new BowerWebpackPlugin({
-      searchResolveModulesDirectories: false
-    })
+      searchResolveModulesDirectories: false,
+    }),
   ],
-  module: defaultSettings.getDefaultModules()
+  module: defaultSettings.getDefaultModules(),
 });
 
 // Add needed loaders to the defaults here
@@ -32,8 +30,8 @@ config.module.loaders.push({
   loader: 'react-hot!babel-loader',
   include: [].concat(
     config.additionalPaths,
-    [ path.join(__dirname, '/../src') ]
-  )
+    [path.join(__dirname, '/../src')],
+  ),
 });
 
 module.exports = config;

@@ -30,10 +30,9 @@ export default class FocusPic extends React.Component {
         onChange={() => { }}
       >
         {picArr.map((item, i) =>
-          <div key={i}>
-            <img src={`http://oukbnub30.bkt.clouddn.com/${item}`} />
-          </div>
-        )}
+          (<div key={i}>
+            <img src={`http://oukbnub30.bkt.clouddn.com/${item}`} alt="" />
+           </div>))}
       </Carousel>
     );
   }
